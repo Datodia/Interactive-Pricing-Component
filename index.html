@@ -9,7 +9,64 @@
     <title>Interactive Pricing Component</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <div class="header">
+            <div class="rings"></div>
+            <div class="title">
+                <h1>Simple, traffic-based pricing</h1>
+                <p>Sign-up for our 30-day trial. 
+                    No credit card required. </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="price">
+            <p>100K PAGEVIEWS</p>
+            <input type="range" min="1" max="32">
+            <div class="amount flex justi">
+                <h1>$16.00</h1>
+                <p> /month</p>
+            </div>
+        </div>
+
+        <div class="bind flex">
+            <p>Monthly Binding</p>
+            <label class="switch" >
+                <input type="checkbox" id="test">
+                <span class="slider round"></span>
+            </label>
+            <p>Yearly Binding</p>
+            <div class="perc">
+                <h3>-25%</h3>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer ">
+            <div class="notes">
+                <div class="note flex">
+                    <img src="assets/path.svg" alt="">
+                    <p>Unlimited websites</p>
+                </div>
+                <div class="note flex">
+                    <img src="assets/path.svg" alt="">
+                    <p>100% data ownership</p>
+                </div>
+                <div class="note flex">
+                    <img src="assets/path.svg" alt="">
+                    <p>Email reports</p>
+                </div>
+            </div>
+            <div class="trail">
+                <button>Start my trail</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
     
 
     <script src="main.js"></script>
