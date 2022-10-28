@@ -1,7 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
 *,
 *::before,
 *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --gray: #848EAD;
+    --black: #293356;
+    --lightBlue: #A4F3EB;
+    --cyan: #10D8C4;
+}
+
+p {
+    color: var(--gray);
+}
+
+.justi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Manrope'
+}
+
+header {
+    width: 375px;
+    display: flex;
+    height: 400px;
+    background-image: url(assets/rectangle.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+header .header {
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+header .header .rings {
+    background-image: url(assets/rings.svg);
+    width: 146px;
+    height: 145px;
+}
+
+header .header .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 15px;
+}
+
+header .header .title h1 {
+    font-size: 20px;
+    color: var(--black);
+}
+
+header .header .title p {
+    font-size: 13px;
+    width: 170px;
+    margin-top: 15px;
+    color: var(--gray);
+}
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.container {
+    border: 2px solid red;
+    width: 327px;
+    margin: auto;
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .price p {
+    font-size: 12px;
+    margin-top: 34px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.container .price input {
+    width: 279px;
+    margin-top: 41px;
+}
+
+input[type=”range”]::-ms-thumb {
+    background-color: red;
+    -moz-appearance: none;
 }
