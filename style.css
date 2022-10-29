@@ -240,6 +240,7 @@ input:checked+.slider:before {
 .container .footer .trail button:hover {
     background-color: var(--cyan);
     transition: all .5s;
+    color: var(--black);
 }
 
 
