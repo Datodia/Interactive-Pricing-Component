@@ -206,6 +206,10 @@ input:checked+.slider:before {
     color: var(--lred);
 }
 
+.container .bind .perc h3::before {
+    content: "-25%";
+}
+
 .container .line {
     width: 327px;
     height: 1px;
@@ -230,6 +234,12 @@ input:checked+.slider:before {
     background-color: var(--black);
     color: #BECDFF;
     font-size: 12px;
+    border: none;
+}
+
+.container .footer .trail button:hover {
+    background-color: var(--cyan);
+    transition: all .5s;
 }
 
 
@@ -243,8 +253,11 @@ input:checked+.slider:before {
 
 #slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     z-index: 10;
     position: relative;
@@ -283,4 +296,5 @@ input:checked+.slider:before {
     position: relative;
     top: 41px;
     z-index: 0;
+    cursor: pointer;
 }
